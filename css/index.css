@@ -137,7 +137,7 @@ body {
 nav {
   display: flex;
   justify-content: flex-end;
-  border: 1px solid black;
+  border: 1px solid #212529;
   text-align: center;
 }
 nav .navchild {
@@ -146,12 +146,17 @@ nav .navchild {
 .top-section {
   background: gray;
   margin: 5% 15% 5% 15%;
-  border: 1px solid black;
+  border: 1px solid #212529;
 }
 .top-section img {
   width: 20%;
   height: 20%;
   margin: 10%;
+}
+@media ( width: 500px ) {
+  .top-section img {
+    width: 70%;
+  }
 }
 .top-section h1 {
   font-size: 400%;
@@ -165,11 +170,21 @@ nav .navchild {
   margin-left: 20%;
   margin-right: 20%;
   margin-bottom: 3%;
-  border-top: 1px solid black;
+  border-top: 1px solid #212529;
 }
 .bottom-section {
   margin-left: 30%;
   margin-bottom: 10%;
+}
+@media ( width: 500px ) {
+  .bottom-section {
+    justify-content: space-around;
+    text-align: center;
+    align-content: center;
+    width: 100%;
+    margin: 0%;
+    margin-left: 15%;
+  }
 }
 .bottom-section h1 {
   font-weight: bold;
@@ -181,19 +196,32 @@ nav .navchild {
   justify-content: space-between;
   width: 60%;
 }
-.bottom-section .listen {
+.bottom-section .both .listen {
   width: 40%;
 }
-.bottom-section .work p {
+.bottom-section .both .work p {
   margin: 10%;
   width: 100%;
   padding: 5%;
+  border: 1px solid #212529;
+}
+.contact {
   border: 1px solid black;
+  margin: 5% 30%;
+  padding: 5%;
+  width: auto;
+  text-align: center;
+}
+@media ( width: 500px ) {
+  .contact {
+    width: 100%;
+    margin: 0%;
+  }
 }
 footer {
   background-color: brown;
   height: 10%;
   text-align: center;
-  color: white;
+  color: #FFFFFF;
   padding: 10%;
 }
